@@ -18,7 +18,7 @@ public class JdbcMain {
 					"jdbc:oracle:thin:@localhost:1521:Xstore","shrikant","shrikant");  
 			
 			//create Statement 
-		    Statement stmt =con.createStatement();
+		    Statement stmt = con.createStatement();
 		    ResultSet rs= stmt.executeQuery("select * from employee");
 		    while(rs.next()) {
 		    	int empId= rs.getInt(1);
@@ -31,6 +31,7 @@ public class JdbcMain {
 		    	System.out.println(empAddress);
 		    	System.out.println("-------------------");
 		    }
+		    
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

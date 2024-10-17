@@ -21,6 +21,7 @@ public class JdbcMain {
 		    Statement stmt =con.createStatement();
 		    ResultSet rs= stmt.executeQuery("select * from employee");
 		    while(rs.next()) {
+		    	
 		    	int empId= rs.getInt(1);
 		    	String empName =rs.getString(2);
 		    	int empSalry= rs.getInt(3);

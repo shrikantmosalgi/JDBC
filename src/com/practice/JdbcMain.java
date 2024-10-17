@@ -17,7 +17,7 @@ public class JdbcMain {
 			Connection con=DriverManager.getConnection(  
 					"jdbc:oracle:thin:@localhost:1521:Xstore","shrikant","shrikant");  
 			
-			//create Statement
+			//create Statement 
 		    Statement stmt =con.createStatement();
 		    ResultSet rs= stmt.executeQuery("select * from employee");
 		    while(rs.next()) {

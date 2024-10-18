@@ -18,9 +18,10 @@ public class JdbcMain {
 					"jdbc:oracle:thin:@localhost:1521:Xstore","shrikant","shrikant");  
 			
 			//create Statement 
-		    Statement stmt =con.createStatement();
+		    Statement stmt = con.createStatement();
 		    ResultSet rs= stmt.executeQuery("select * from employee");
 		    while(rs.next()) {
+		    	System.out.println();
 		    	int empId= rs.getInt(1);
 		    	String empName =rs.getString(2);
 		    	int empSalry= rs.getInt(3);
@@ -31,6 +32,7 @@ public class JdbcMain {
 		    	System.out.println(empAddress);
 		    	System.out.println("-------------------");
 		    }
+		    
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

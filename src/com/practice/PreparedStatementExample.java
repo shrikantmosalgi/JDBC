@@ -23,7 +23,7 @@ public class PreparedStatementExample {
 					+ "values (?,?,?,?)";
 			//get PreparedStatement
 		   PreparedStatement pstmt = con.prepareStatement(query);
-		   
+		  
 		   
 		   //Here we are using buffered reader we can also use scanner for taking input
 		   BufferedReader br =new BufferedReader(new InputStreamReader(System.in));

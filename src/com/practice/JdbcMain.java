@@ -26,10 +26,8 @@ public class JdbcMain {
 		    	String empName =rs.getString(2);
 		    	int empSalry= rs.getInt(3);
 		    	String empAddress= rs.getString(4);
-		    	System.out.println(empId);
-		    	System.out.println(empName);
-		    	System.out.println(empSalry);
-		    	System.out.println(empAddress);
+		    	System.out.println(empId +" "+ empName+" " + empSalry+" " + empAddress);
+		    	
 		    	System.out.println("-------------------");
 		    }
 		    

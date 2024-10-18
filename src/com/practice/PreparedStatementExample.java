@@ -25,7 +25,6 @@ public class PreparedStatementExample {
 		   PreparedStatement pstmt = con.prepareStatement(query);
 		   
 		   
-		   
 		   //Here we are using buffered reader we can also use scanner for taking input
 		   BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
 		   System.out.println("enter employee id");

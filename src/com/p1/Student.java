@@ -1,0 +1,8 @@
+package com.p1;
+
+public class Student {
+	
+	private int id;
+	private String name;
+
+}

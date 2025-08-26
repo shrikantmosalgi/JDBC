@@ -4,6 +4,6 @@ public class Student {
 	
 	private int id;
 	private String name;
-	private String city1;
+	private String city2;
 
 }

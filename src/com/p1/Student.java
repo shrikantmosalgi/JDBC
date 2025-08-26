@@ -8,7 +8,6 @@ public class Student {
 	private String city2;
 
 	private String city;
-	
 	private String village;
 
 
